@@ -22,5 +22,18 @@ public class Grade {
         }
         System.out.println(result);
 
+        grade = 'B';
+        if (grade == 'A'){
+            result = "Excellent";
+        } else if (grade == 'B') {
+            result = "Great job";
+        } else if (grade == 'C') {
+            result = "Good";
+        } else if (grade == 'D') {
+            result = "Passed";
+        }else {
+            result = "Failed";
+        }
+        System.out.println(result);
     }
 }
