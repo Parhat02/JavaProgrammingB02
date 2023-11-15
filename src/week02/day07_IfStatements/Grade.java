@@ -1,4 +1,4 @@
-package week02.wee07_IfStatements;
+package week02.day07_IfStatements;
 
 public class Grade {
 
