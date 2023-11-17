@@ -140,7 +140,7 @@ program that can print the grade of the student
         int age = 9;
         if (age>=0 && age <=150){
             if (age <21){
-                System.out.println("Teemage");
+                System.out.println("Teenage");
             } else if (age>=21 && age<55) {
                 System.out.println("Adult");
             }else{
