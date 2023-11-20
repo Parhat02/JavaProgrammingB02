@@ -47,11 +47,11 @@ multiples of 10. Otherwise, the below message will be displayed on the screen.
         Scanner input = new Scanner(System.in);
         System.out.println("What is your loyalty point: ");
         int loyalty = input.nextInt();
-        String result = "";
+        String result ;
 
         if (loyalty >= 0 && loyalty %10 == 0){
             if (loyalty >= 100){
-                result = "Congratulations! You are a member. Enjoy a 10% discount!";
+                result = "Congratulations! You are a Gold Member. Enjoy a 10% discount!";
             } else if (loyalty >= 50) {
                 result = "You are a Silver Member. Enjoy a 5% discount on your order.";
             } else if (loyalty >= 20) {
