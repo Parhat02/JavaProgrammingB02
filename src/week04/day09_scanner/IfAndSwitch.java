@@ -1,6 +1,6 @@
 package week04.day09_scanner;
 
-public class IfAbdSwitch {
+public class IfAndSwitch {
     public static void main(String[] args) {
         int number = 75;
 
