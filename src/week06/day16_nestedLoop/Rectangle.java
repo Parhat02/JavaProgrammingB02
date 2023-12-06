@@ -27,11 +27,11 @@ public class Rectangle {
                 System.exit(1);
             }
 
-            double AreaOfRectangle = length * width;
-            double PerimeterOfRectangle = 2 * (length + width);
+            double areaOfRectangle = length * width;
+            double perimeterOfRectangle = 2 * (length + width);
 
-            System.out.println("1.Area of rectangle: " +AreaOfRectangle+
-                    "\n2.Perimeter of a rectangle: "+ PerimeterOfRectangle);
+            System.out.println("1.Area of rectangle: " +areaOfRectangle+
+                    "\n2.Perimeter of a rectangle: "+ perimeterOfRectangle);
 
             System.out.println("Would you like to calculate another rectangle? (Yes/No)");
             answer = input.next().toLowerCase();
