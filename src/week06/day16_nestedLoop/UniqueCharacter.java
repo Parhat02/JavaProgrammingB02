@@ -6,6 +6,7 @@ public class UniqueCharacter {
 
     public static void main(String[] args) {
 
+        /*
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String str = input.next();
@@ -23,11 +24,27 @@ public class UniqueCharacter {
                     str = str.replace(ch+"","");
                     break;
                 }
-
             }
         }
         System.out.println(unique);
-    }
+        */
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str = input.next();
+    
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            for (int j = i+1; j < str.length(); j++) {
+
+                if ( str.charAt(j)==ch){
+                  str = str.replace(ch+ "", "");
+            }
+        }
+      }
+    System.out.println(str);
+}
 
     /*
     10. Write a program that can find the unique characters from a string without using index() and lastIndexOf() methods
