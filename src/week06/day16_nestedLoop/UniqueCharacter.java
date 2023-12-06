@@ -6,29 +6,6 @@ public class UniqueCharacter {
 
     public static void main(String[] args) {
 
-        /*
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter a string: ");
-        String str = input.next();
-        String unique = "";
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-
-            for (int j = i+1; j < str.length(); j++) {
-
-                if ( !(str.charAt(j)==ch)){
-                    if (j == str.length()-1){
-                        unique += ch;
-                    }
-                }else {
-                    str = str.replace(ch+"","");
-                    break;
-                }
-            }
-        }
-        System.out.println(unique);
-        */
-        
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String str = input.next();
