@@ -2,11 +2,11 @@ package week06.day17_customClass;
 
 public class Car {
 
-    String make;
-    String model;
-    int year;
-    String color;
-    double price;
+    public String make;
+    public String model;
+    public int year;
+    public String color;
+    public double price;
 
     public void setInfo(String make, String model, int year, String color, double price) {
         this.make = make;

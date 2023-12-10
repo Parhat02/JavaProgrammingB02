@@ -2,11 +2,11 @@ package week06.day17_customClass;
 
 public class Rectangle {
 
-    double length;
-    double width;
+    public double length;
+    public double width;
 
-    double areaOfRectangle;
-    double perimeterOfRectangle;
+    public double areaOfRectangle;
+    public double perimeterOfRectangle;
 
     public void setInfo(int length, int width) {
         this.length = length;

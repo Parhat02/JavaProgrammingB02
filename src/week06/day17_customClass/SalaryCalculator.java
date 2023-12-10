@@ -2,16 +2,16 @@ package week06.day17_customClass;
 
 public class SalaryCalculator {
 
-    double hourlyRate;
-    int weeklyHours;
+    public double hourlyRate;
+    public int weeklyHours;
 
-    double stateTaxRate;
-    double federalTaxRate;
-    double salary;
+    public double stateTaxRate;
+    public double federalTaxRate;
+    public double salary;
 
-    double stateTax;
-    double federalTax;
-    double salaryAfterTax;
+    public double stateTax;
+    public double federalTax;
+    public double salaryAfterTax;
 
     public void setInfo(double hourlyRate, int weeklyHours, double stateTaxRate, double federalTaxRate) {
         this.hourlyRate = hourlyRate;
