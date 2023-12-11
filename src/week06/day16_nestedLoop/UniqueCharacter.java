@@ -9,18 +9,23 @@ public class UniqueCharacter {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a string: ");
         String str = input.next();
-    
+        String unique = "";
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
+            int frequency = 0;
+            for (int j = 0 ; j < str.length(); j++) {
 
-            for (int j = i+1; j < str.length(); j++) {
-
-                if ( str.charAt(j)==ch){
-                  str = str.replace(ch+ "", "");
+                if (str.charAt(j) == ch) {
+                    frequency++;
+                }
             }
+            if (frequency == 1) { // if the frequency is one, then it's unique
+                unique += ch;
+            }
+
         }
-      }
-    System.out.println(str);
+        System.out.println(unique);
+    }
 }
 
     /*
@@ -36,4 +41,4 @@ public class UniqueCharacter {
             characters to find the frequency.
                         if frequency of a character == 1  =========> unique
      */
-}
+
