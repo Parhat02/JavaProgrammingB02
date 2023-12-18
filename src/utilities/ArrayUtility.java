@@ -175,5 +175,76 @@ public class ArrayUtility {
         }
         return false;
     }
-    
+
+    public static int[] remove(int[] array, int index){
+        int[] newArray = new int[array.length-1];
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i==index){
+                continue;
+            }
+            newArray[j] = array[i];
+            j++;
+        }
+        return newArray;
+    }
+
+    public static double[] remove(double[] array, int index){
+        double[] newArray = new double[array.length-1];
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i==index){
+                continue;
+            }
+            newArray[j] = array[i];
+            j++;
+        }
+        return newArray;
+    }
+    public static String[] remove(String[] array, int index){
+        String[] newArray = new String[array.length-1];
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i==index){
+                continue;
+            }
+            newArray[j] = array[i];
+            j++;
+        }
+        return newArray;
+    }
+
+    public static char[] remove(char[] array, int index){
+        char[] newArray = new char[array.length-1];
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i==index){
+                continue;
+            }
+            newArray[j] = array[i];
+            j++;
+        }
+        return newArray;
+    }
+
+    public static int[] removeDup(int[] array){
+
+        int[] newArray = array;
+
+        for (int i = 0; i < array.length; i++) {
+
+            int[] tempArray = Arrays.copyOfRange(array,i+1, array.length);
+
+            if (ArrayUtility.isContains(tempArray, array[i])){
+
+                for (int j = 0; j < newArray.length; j++) {
+                    if (newArray[j] == array[i]){
+                        newArray = ArrayUtility.remove(newArray, j);
+                    }
+                }
+            }
+
+        }
+        return newArray;
+    }
 }

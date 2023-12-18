@@ -38,10 +38,10 @@ public class TestItemObjects {
         ShoppingCart cart = new ShoppingCart();
 
 
-//        cart.addItem(item1);
-//        cart.addItem(item2);
-//        cart.addItem( item3 );
-//        cart.addItem( item4 );
+        cart.addItem(item1);
+        cart.addItem(item2);
+        cart.addItem( item3 );
+        cart.addItem( item4 );
         //   cart.addItem( item5 );
         //   cart.addItem( item6 );
         //  cart.addItem( item7 );
