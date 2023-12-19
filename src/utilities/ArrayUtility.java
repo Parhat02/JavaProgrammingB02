@@ -286,4 +286,160 @@ public class ArrayUtility {
         }
         return newArray;
     }
+
+
+    public static int[] replace(int[] array, int index, int element){
+        for (int i = 0; i < array.length; i++) {
+            if (i == index){
+                array[i] = element;
+            }
+        }
+        return array;
+    }
+    public static double[] replace(double[] array, int index, double element){
+        for (int i = 0; i < array.length; i++) {
+            if (i == index){
+                array[i] = element;
+            }
+        }
+        return array;
+    }
+    public static String[] replace(String[] array, int index, String element){
+        for (int i = 0; i < array.length; i++) {
+            if (i == index){
+                array[i] = element;
+            }
+        }
+        return array;
+    }
+    public static char[] replace(char[] array, int index, char element){
+        for (int i = 0; i < array.length; i++) {
+            if (i == index){
+                array[i] = element;
+            }
+        }
+        return array;
+    }
+
+    public static int [] replaceAll(int[] array, int oldElement, int newElement){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == oldElement){
+                array[i] = newElement;
+            }
+        }
+        return array;
+    }
+
+    public static double[] replaceAll(double[] array, double oldElement, double newElement){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == oldElement){
+                array[i] = newElement;
+            }
+        }
+        return array;
+    }
+    public static String[] replaceAll(String[] array, String oldElement, String newElement){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == oldElement){
+                array[i] = newElement;
+            }
+        }
+        return array;
+    }
+    public static char[] replaceAll(char[] array, char oldElement, char newElement){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == oldElement){
+                array[i] = newElement;
+            }
+        }
+        return array;
+    }
+
+    public static double[] insert(double[] array, int index, double element){
+        double[] newArray = new double[array.length+1];
+        for (int i = 0; i < newArray.length; i++) {
+            if (i==index){
+                newArray[i] = element;
+                continue;
+            }
+            if (i > index){
+                newArray[i] = array[i-1];
+                continue;
+            }
+            newArray[i] = array[i];
+        }
+        return newArray;
+    }
+    public static int[] insert(int[] array, int index, int element){
+        int[] newArray = new int[array.length+1];
+        for (int i = 0; i < newArray.length; i++) {
+            if (i==index){
+                newArray[i] = element;
+                continue;
+            }
+            if (i > index){
+                newArray[i] = array[i-1];
+                continue;
+            }
+            newArray[i] = array[i];
+        }
+        return newArray;
+    }
+    public static String[] insert(String[] array, int index, String element){
+        String[] newArray = new String[array.length+1];
+        for (int i = 0; i < newArray.length; i++) {
+            if (i==index){
+                newArray[i] = element;
+                continue;
+            }
+            if (i > index){
+                newArray[i] = array[i-1];
+                continue;
+            }
+            newArray[i] = array[i];
+        }
+        return newArray;
+    }
+    public static char[] insert(char[] array, int index, char element){
+        char[] newArray = new char[array.length+1];
+        for (int i = 0; i < newArray.length; i++) {
+            if (i==index){
+                newArray[i] = element;
+                continue;
+            }
+            if (i > index){
+                newArray[i] = array[i-1];
+                continue;
+            }
+            newArray[i] = array[i];
+        }
+        return newArray;
+    }
+
+    public static int [] swap(int[] array, int i, int j){
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+    public static double[] swap(double[] array, int i, int j){
+        double temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+    public static String[] swap(String[] array, int i, int j){
+        String temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+    public static char[] swap(char[] array, int i, int j){
+        char temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        return array;
+    }
+
+
 }
