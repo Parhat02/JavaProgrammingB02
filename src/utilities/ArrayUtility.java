@@ -229,21 +229,60 @@ public class ArrayUtility {
 
     public static int[] removeDup(int[] array){
 
-        int[] newArray = array;
+        int[] newArray = new int[0];
 
-        for (int i = 0; i < array.length; i++) {
+        for (int j : array) {
 
-            int[] tempArray = Arrays.copyOfRange(array,i+1, array.length);
-
-            if (ArrayUtility.isContains(tempArray, array[i])){
-
-                for (int j = 0; j < newArray.length; j++) {
-                    if (newArray[j] == array[i]){
-                        newArray = ArrayUtility.remove(newArray, j);
-                    }
-                }
+            if (ArrayUtility.isContains(newArray, j)) {
+                continue;
             }
 
+            newArray = ArrayUtility.addElement(newArray, j);
+        }
+        return newArray;
+    }
+
+    public static double[] removeDup(double[] array){
+
+        double[] newArray = new double[0];
+
+        for (double v : array) {
+
+            if (ArrayUtility.isContains(newArray, v)) {
+                continue;
+            }
+
+            newArray = ArrayUtility.addElement(newArray, v);
+        }
+        return newArray;
+    }
+
+    public static String[] removeDup(String[] array){
+
+        String[] newArray = new String[0];
+
+        for (String v : array) {
+
+            if (ArrayUtility.isContains(newArray, v)) {
+                continue;
+            }
+
+            newArray = ArrayUtility.addElement(newArray, v);
+        }
+        return newArray;
+    }
+
+    public static char[] removeDup(char[] array){
+
+        char[] newArray = new char[0];
+
+        for (char v : array) {
+
+            if (ArrayUtility.isContains(newArray, v)) {
+                continue;
+            }
+
+            newArray = ArrayUtility.addElement(newArray, v);
         }
         return newArray;
     }
