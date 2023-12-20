@@ -3,6 +3,7 @@ package week08.day23_arrayList;
 import com.sun.jdi.IntegerValue;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListMethod {
 
@@ -120,6 +121,10 @@ public class ArrayListMethod {
 
         System.out.println(n1.equals(n2));
 
+        Collections.sort(n1);
+        Collections.sort(n2);
+
+        System.out.println(n1.equals(n2));
 
         System.out.println(n1.isEmpty());
         System.out.println(n2.isEmpty());
@@ -129,6 +134,8 @@ public class ArrayListMethod {
 
         System.out.println(n1.isEmpty());
         System.out.println(n2.isEmpty());
+
+
 
 
     }
