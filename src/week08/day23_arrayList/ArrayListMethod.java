@@ -82,7 +82,7 @@ public class ArrayListMethod {
         ArrayList<Integer> list2 = list1;
 
         list1.add(10);
-
+        //list2.add(10):
         System.out.println(list1);
         System.out.println(list2);
 
