@@ -1,8 +1,10 @@
 package week08.day24_dateAndTime;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Scanner;
 
 public class day24Tasks {
 
@@ -64,18 +66,49 @@ public class day24Tasks {
         //Task7
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Anna", "Canada", "Bob", "David", "Lan",
                 "Abida", "Ebrahim", "Farida"));
+        ArrayList<String> namesTemp = new ArrayList<>(Arrays.asList("Anna", "Canada", "Bob", "David", "Lan",
+                "Abida", "Ebrahim", "Farida"));
         for (String name : names) {
             String firstChar = name.charAt(0) + "";
             String lastChar = name.charAt(name.length() - 1) + "";
             if (firstChar.equalsIgnoreCase(lastChar)){
-                names.remove(name);
+                namesTemp.remove(name);
             }
         }
-        System.out.println(names);
+        System.out.println(namesTemp);
 
         System.out.println("----------------------------------------------------");
 
         //Task8
+        System.out.println(isLeapYear(1996));
+        System.out.println(LocalDate.ofYearDay(2023,325));
 
+        System.out.println("----------------------------------------------------");
+
+        //Task9
+        ArrayList<LocalDate> localDateArrayList = new ArrayList<>();
+        localDateArrayList.add(LocalDate.of(2015, 8, 15));
+        localDateArrayList.add(LocalDate.of(1999, 2, 28));
+        localDateArrayList.add(LocalDate.of(2016, 8, 15));
+        localDateArrayList.add(LocalDate.of(2016, 8, 16));
+        localDateArrayList.add(LocalDate.of(2019, 2, 28));
+        localDateArrayList.add(LocalDate.of(2021, 2, 28));
+
+        localDateArrayList.removeIf(p-> p.isBefore(LocalDate.of(2016, 8, 15)));
+
+        System.out.println(localDateArrayList);
+
+    }
+
+    public static boolean isLeapYear(int year){
+
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Enter your birth year: ");
+//        int year = input.nextInt();
+        if (LocalDate.of(year, 1, 1).isLeapYear()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
