@@ -1,14 +1,15 @@
 package week09.day26_statics;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StudentsGroup {
 
     public String groupName;
-    public String groupId;
+    public int groupId;
     public ArrayList<Student> students = new ArrayList<>();
 
-    public StudentsGroup(String groupName, String groupId) {  // creates the StudentsGroup object by setting the groupName and groupId
+    public StudentsGroup(String groupName, int groupId) {  // creates the StudentsGroup object by setting the groupName and groupId
         this.groupName = groupName;
         this.groupId = groupId;
     }
@@ -16,6 +17,10 @@ public class StudentsGroup {
     public void addStudent(Student student){
         students.add(student);
     }// Takes one student object, and adds it to the arraylist of students
+
+    public void addStudent(Student[] students){
+        this.students.addAll(Arrays.asList(students));
+    }
 
     public void addStudent(String name, int age, char gender, String id){
 //        Student student = new Student(name, age, gender, id);
