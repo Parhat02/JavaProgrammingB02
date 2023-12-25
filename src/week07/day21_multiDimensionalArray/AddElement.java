@@ -67,5 +67,9 @@ public class AddElement {
         int[] array5 = {0, 20, 30, 40, 10, 20, 30, 40,20, 30, 40, 5, 2, 40, 30, 20, 7};
         array5 = ArrayUtility.removeDup(array5);
         System.out.println(Arrays.toString(array5));
+
+        array4 = ArrayUtility.insert(array4,2,60);
+        System.out.println(Arrays.toString(array4));
+
     }
 }
