@@ -33,11 +33,11 @@ public class TestObjects {
 
         System.out.println("------------------------------------------");
 
-        StudentsGroup group2 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group2 = new StudentsGroup("Java b2",  2);
 
-        StudentsGroup group3 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group3 = new StudentsGroup("Java a3",  3);
 
-        StudentsGroup group4 = new StudentsGroup("Java Turtles",  1);
+        StudentsGroup group4 = new StudentsGroup("Java f4",  4);
 
         StudentsGroup[] groups = {group1, group2, group3, group4};
 
