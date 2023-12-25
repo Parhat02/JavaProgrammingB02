@@ -30,6 +30,12 @@ public class Iphone {
                 '}';
     }
 
+    /*
+    public static void printPhoneInfo(){ // static only accepts statics
+    System.out.println("Model: " + model);
+    System.out.println("Color: " + color);
+    }
+*/
     public void printPhoneInfo() { // instance methods accepts both static and none static
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
