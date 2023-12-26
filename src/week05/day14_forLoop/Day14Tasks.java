@@ -2,7 +2,7 @@ package week05.day14_forLoop;
 
 import java.util.Scanner;
 
-public class day14Tasks {
+public class Day14Tasks {
 
     public static void main(String[] args) {
 

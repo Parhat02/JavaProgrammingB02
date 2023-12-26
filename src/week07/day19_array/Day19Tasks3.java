@@ -2,7 +2,7 @@ package week07.day19_array;
 
 import java.util.Arrays;
 
-public class day19Tasks3 {
+public class Day19Tasks3 {
 
     public static void main(String[] args) {
         /*

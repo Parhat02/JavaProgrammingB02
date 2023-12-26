@@ -2,7 +2,7 @@ package week04.day11_string;
 
 import java.util.Scanner;
 
-public class day11Tasks {
+public class Day11Tasks {
     public static void main(String[] args) {
         /*
         1. Create a class named WebsiteAddress, and write a program that can check if the given website is a valid website or not

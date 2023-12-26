@@ -1,6 +1,6 @@
 package week05.day13_customMethods;
 
-public class day13Tasks {
+public class Day13Tasks {
     public static void main(String[] args) {
 
         System.out.println(combine("One", "Eight"));

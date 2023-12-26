@@ -1,6 +1,6 @@
 package week07.day21_multiDimensionalArray;
 
-public class day21Tasks {
+public class Day21Tasks {
 
     public static void main(String[] args) {
 

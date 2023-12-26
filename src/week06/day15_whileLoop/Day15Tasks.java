@@ -2,7 +2,7 @@ package week06.day15_whileLoop;
 
 import java.util.Scanner;
 
-public class day15Tasks {
+public class Day15Tasks {
 
     /*
     1.  Create a class named Marriage Proposal and Write a program for the  marriage proposal program asking the user, "Will you marry me?"

@@ -2,7 +2,7 @@ package week08.day23_arrayList;
 
 import java.util.*;
 
-public class day23Task {
+public class Day23Task {
 
     public static void main(String[] args) {
 

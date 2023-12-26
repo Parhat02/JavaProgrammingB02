@@ -4,9 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Scanner;
 
-public class day24Tasks {
+public class Day24Tasks {
 
     public static void main(String[] args) {
 

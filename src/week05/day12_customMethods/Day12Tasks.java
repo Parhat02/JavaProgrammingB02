@@ -1,6 +1,6 @@
 package week05.day12_customMethods;
 
-public class day12Tasks {
+public class Day12Tasks {
    /*
     1. Create a method named emailDomain that can display the domain of the email
         Ex:
