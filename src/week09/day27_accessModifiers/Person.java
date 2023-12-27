@@ -10,6 +10,29 @@ public class Person {
     public static boolean isHuman, hasNose;
     public static int numberOfWings, numberOfHead;
 
+    public Person() {
+    }
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Person(String name, String language) {
+        this.name = name;
+        this.language = language;
+    }
+
+    public Person(String name, String language, int age) {
+        this.name = name;
+        this.language = language;
+        this.age = age;
+    }
+
     public Person(String name, String language, int age, char gender) {
         this.name = name;
         this.language = language;
@@ -25,7 +48,7 @@ public class Person {
         numberOfHead = 0;
     }
 
-    public void printPlanetName(){
+    public static void printPlanetName(){
         System.out.println("Planet name is : " + planet);
     }
 
@@ -44,6 +67,7 @@ public class Person {
                 ", language='" + language + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
+                ", planet='" + planet + '\'' +
                 '}';
     }
 }
