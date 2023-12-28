@@ -1,6 +1,5 @@
-package genneralPraactice;
+package genneralPractice;
 
-import static week09.day27_accessModifiers.Data.*;
 import static week09.day27_accessModifiers.Data.d;
 import static week09.day27_accessModifiers.Data.e;
 import static week09.day27_accessModifiers.Data.f;

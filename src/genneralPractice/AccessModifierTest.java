@@ -1,4 +1,4 @@
-package genneralPraactice;
+package genneralPractice;
 
 import week09.day27_accessModifiers.AccessModifiers;
 import week09.day27_accessModifiers.Data;
