@@ -6,6 +6,22 @@ public class Car {
     private int year;
     private double price;
 
+    public Car() {
+    }
+
+    public Car(String make, String model, String color, int year, double price) {
+        setMake(make);
+        setModel(model);
+        setColor(color);
+        setYear(year);
+        setPrice(price);
+//        this.make = make;
+//        this.model = model;
+//        this.color = color;
+//        this.year = year;
+//        this.price = price;
+    }
+
     public String getMake() {
         return make;
     }

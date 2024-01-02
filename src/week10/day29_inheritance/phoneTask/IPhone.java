@@ -2,8 +2,8 @@ package week10.day29_inheritance.phoneTask;
 
 public class IPhone extends Phone{
 
-    public IPhone(String brand, String model, String size, String color, double price) {
-        super(brand, model, size, color, price);
+    public IPhone(String model, String size, String color, double price) {
+        super("Iphone", model, size, color, price);
     }
 
     public void faceTime(long phoneNumber){

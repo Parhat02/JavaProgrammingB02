@@ -4,9 +4,11 @@ public class TestPhone {
 
     public static void main(String[] args) {
 
-        IPhone iphone = new IPhone("IPhone 12", "Large", "max","Black", 1000.5);
+        IPhone iphone = new IPhone("IPhone 12", "Large", "Black", 1000.5);
 
-        Samsung samsung = new Samsung("Galaxy S22", "Medium", "max","White", 1100);
+        IPhone iphone1 = new IPhone("IPhone 12", "Large", "Black", 1000.5);
+
+        Samsung samsung = new Samsung("Galaxy S22", "Medium", "White", 1100);
 
         Nokia nokia = new Nokia("Brick", "Small", "mini", "Pink",50);
 

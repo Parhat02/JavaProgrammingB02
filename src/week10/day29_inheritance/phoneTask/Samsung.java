@@ -2,8 +2,8 @@ package week10.day29_inheritance.phoneTask;
 
 public class Samsung extends Phone{
 
-    public Samsung(String brand, String model, String size, String color, double price) {
-        super(brand, model, size, color, price);
+    public Samsung(String model, String size, String color, double price) {
+        super("Samsung", model, size, color, price);
     }
 
     public void freeze(){
