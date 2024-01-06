@@ -23,6 +23,8 @@ public class Library {
     public Library(List<Book> list) {
     }
 
+    public Library() {
+    }
 
     // Encapsulate
     public String getName() {
