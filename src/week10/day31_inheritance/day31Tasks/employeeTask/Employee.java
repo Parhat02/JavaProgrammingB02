@@ -10,6 +10,29 @@ public class Employee {
     private double salary;
 
 
+    public Employee(String name, int age, char gender, int id) {
+        setName(name);
+        setAge(age);
+        setGender(gender);
+        setId(id);
+    }
+
+    public Employee(String name, int age, char gender, int id, double salary) {
+        setName(name);
+        setAge(age);
+        setGender(gender);
+        setId(id);
+        setSalary(salary);
+    }
+
+    public Employee(String name, int age, char gender, int id, double salary, String jobTitle) {
+        setName(name);
+        setAge(age);
+        setGender(gender);
+        setId(id);
+        setJobTitle(jobTitle);
+        setSalary(salary);
+    }
     public Employee(String name, int age, char gender, int id, String jobTitle, String companyName, double salary) {
         setName(name);
         setAge(age);
@@ -92,6 +115,14 @@ public class Employee {
 
     public void work(){
         System.out.println(name + " is working");
+    }
+
+    public void displayInfo(){
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Gender: " + getGender());
+        System.out.println("Employee ID: " + getId());
+        System.out.println("Salary: $" + getSalary());
     }
 
     @Override

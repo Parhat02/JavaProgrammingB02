@@ -48,6 +48,78 @@ public class Person {
         numberOfHead = 0;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    public static String getPlanet() {
+        return planet;
+    }
+
+    public static void setPlanet(String planet) {
+        Person.planet = planet;
+    }
+
+    public static boolean isIsHuman() {
+        return isHuman;
+    }
+
+    public static void setIsHuman(boolean isHuman) {
+        Person.isHuman = isHuman;
+    }
+
+    public static boolean isHasNose() {
+        return hasNose;
+    }
+
+    public static void setHasNose(boolean hasNose) {
+        Person.hasNose = hasNose;
+    }
+
+    public static int getNumberOfWings() {
+        return numberOfWings;
+    }
+
+    public static void setNumberOfWings(int numberOfWings) {
+        Person.numberOfWings = numberOfWings;
+    }
+
+    public static int getNumberOfHead() {
+        return numberOfHead;
+    }
+
+    public static void setNumberOfHead(int numberOfHead) {
+        Person.numberOfHead = numberOfHead;
+    }
+
     public static void printPlanetName(){
         System.out.println("Planet name is : " + planet);
     }

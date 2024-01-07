@@ -7,6 +7,14 @@ public class Person {
 
     private char gender;
 
+    public Person() {
+    }
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public Person(String name, int age, char gender) {
         setName(name);
         setAge(age);

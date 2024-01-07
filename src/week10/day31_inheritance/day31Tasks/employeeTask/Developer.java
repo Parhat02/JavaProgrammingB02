@@ -10,6 +10,20 @@ public class Developer extends Employee{
         this.programmingLanguage = programmingLanguage;
     }
 
+    public Developer(String name, int age, char gender, int id, String programmingLanguage) {
+        super(name, age, gender, id);
+        setProgrammingLanguage(programmingLanguage);
+    }
+
+    public Developer(String name, int age, char gender, int id, double salary, String programmingLanguage) {
+        super(name, age, gender, id, salary);
+        setProgrammingLanguage(programmingLanguage);
+    }
+
+    public Developer(String name, int age, char gender, int id, double salary) {
+        super(name, age, gender, id, salary);
+    }
+
     public String getProgrammingLanguage() {
         return programmingLanguage;
     }
@@ -20,6 +34,6 @@ public class Developer extends Employee{
 
     @Override
     public void work() {
-        System.out.println(getJobTitle() + getName() + " is coding in "+programmingLanguage);
+        System.out.println(getName() + " is coding in "+programmingLanguage);
     }
 }
