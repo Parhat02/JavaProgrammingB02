@@ -12,7 +12,7 @@ class CydeoStudent{
 }
 
 
-public class FinalKeyWord extends CydeoStudent{
+public final class FinalKeyWord extends CydeoStudent{
 
     public void language(){
         System.out.println("Python programming");
