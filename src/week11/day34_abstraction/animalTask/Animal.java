@@ -1,6 +1,6 @@
 package week11.day34_abstraction.animalTask;
 
-public abstract class Animal {
+public abstract class Animal{
 
     private String name, breed;
     private final char gender;
