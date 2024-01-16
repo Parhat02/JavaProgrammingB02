@@ -9,7 +9,7 @@ public class MyDevices {
         phone.call(123456);
         phone.text(123546);
 
-        Iphone iphone = new Iphone("ProMax", "Blue", "Large", 1200,true,true);
+        IPhone iphone = new IPhone("ProMax", "Blue", "Large", 1200,true,true);
         System.out.println(iphone);
         iphone.call(987654);
         iphone.text(987654);

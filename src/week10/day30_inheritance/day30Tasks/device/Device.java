@@ -101,6 +101,14 @@ public class Device {
         setHasPowerButton(hasPowerButton);
     }
 
+    public Device(String brand, String model, String size, String color, double price) {
+        setBrand(brand);
+        setModel(model);
+        setSize(size);
+        setColor(color);
+        setPrice(price);
+    }
+
     @Override
     public String toString() {
         return getClass().getSimpleName() + " {" +

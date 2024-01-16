@@ -6,6 +6,10 @@ public class Phone extends Device{
         super(brand, model, color, size, price, hasBattery, hasPowerButton);
     }
 
+    public Phone(String brand, String model, String size, String color, double price) {
+        super(brand, model, size, color, price);
+    }
+
     public void call(long phoneNumber){
         System.out.println("Calling : " + phoneNumber);
     }
