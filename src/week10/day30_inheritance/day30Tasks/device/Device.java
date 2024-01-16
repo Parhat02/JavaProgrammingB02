@@ -10,7 +10,7 @@ public class Device {
 
 
     public String getBrand() {
-        if (getBrand() == null){
+        if (brand == null){
             System.err.println("Brand can not be null");
             System.exit(1);
         }
@@ -24,7 +24,7 @@ public class Device {
     }
 
     public String getModel() {
-        if (getModel() == null){
+        if (model == null){
             System.err.println("Brand can not be null");
             System.exit(1);
         }
