@@ -42,6 +42,34 @@ public class PolymorphismPractice {
         System.out.println("---------------------------------------------------------");
 
 
+        int countIphone = 0;
+        int countSamsung = 0;
+
+        for (Phone each : phones) {
+
+            if(each instanceof IPhone){ // if the phone is Iphone
+                countIphone++;
+            }
+
+            if(each instanceof Samsung){ // if the phone is samsung
+                countSamsung++;
+            }
+
+        }
+
+        System.out.println(countIphone);
+        System.out.println(countSamsung);
+
+
+        System.out.println("---------------------------------------------------------");
+
+        for (Phone each : phones) {
+            if( each instanceof IPhone || each instanceof Samsung){ // if the phone is Iphone or samsung
+                if(each.getPrice() >= 700){
+                    System.out.println(each.getModel());
+                }
+            }
+        }
 
     }
 }
