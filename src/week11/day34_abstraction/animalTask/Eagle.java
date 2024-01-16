@@ -14,7 +14,7 @@ public class Eagle extends Animal implements Flyable, WildAnimal{
 
     @Override
     public void fly() {
-
+        System.out.println(getName() + " is flying.");
     }
 
     @Override

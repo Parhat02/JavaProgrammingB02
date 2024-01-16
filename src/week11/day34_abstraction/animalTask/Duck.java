@@ -1,6 +1,6 @@
 package week11.day34_abstraction.animalTask;
 
-public class Duck extends Animal implements Playable, Flyable{
+public class Duck extends Animal implements Playable, Flyable, Swimmable{
 
     public Duck(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
@@ -18,6 +18,11 @@ public class Duck extends Animal implements Playable, Flyable{
 
     @Override
     public void fly() {
+
+    }
+
+    @Override
+    public void swim() {
 
     }
 }
