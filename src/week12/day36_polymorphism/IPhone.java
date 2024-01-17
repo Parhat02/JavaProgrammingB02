@@ -84,5 +84,22 @@ public class IPhone {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof IPhone)){ // if the given object is not Iphone
+            System.err.println("Invalid object, Object must be Iphone");
+            System.exit(1);
+        }
 
+        if (model.equals( ((IPhone) obj).model)){// if the model of the Iphone is equal to the given Iphone' model
+          /*
+            if(color.equals( ( (IPhone)obj ).color  )   ){ // if the color of the Iphone is equal to the given iphone' color
+                return true;
+            }
+
+           */
+            return true;
+        }
+        return false;
+    }
 }
