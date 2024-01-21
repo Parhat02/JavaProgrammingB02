@@ -47,5 +47,26 @@ public class Test {
 
         System.out.println(product2);
 
+
+        System.out.println("----------------------------------------------------------------");
+
+        Product[] products = {new Product("NoteBook", 3.5), new Product("Eraser", 4.5) };
+
+        ShoppingCart cart = new ShoppingCart();
+
+        cart.addToCart( new Product("Pen", 2.5));
+
+        cart.addToCart(products);
+
+        cart.displayCart();
+
+        System.out.println("\n\n===================================================");
+
+        cart.remove("Pen");
+
+        cart.displayCart();
+
+        cart.remove("TV");
+
     }
 }
