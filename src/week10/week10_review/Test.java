@@ -1,8 +1,6 @@
 package week10.week10_review;
 
-import week10.day31_inheritance.day31Tasks.employeeTask.Developer;
-import week10.day31_inheritance.day31Tasks.employeeTask.Employee;
-import week10.day31_inheritance.day31Tasks.studentTask.Person;
+
 
 public class Test {
 
@@ -20,7 +18,7 @@ public class Test {
 
         System.out.println("--------------------------------------------");
 
-        Employee employee = new Employee("Edward Cruz", 30, 'M', 101, 120_000);
+        Employee employee = new Employee("Edward Cruz", 30, "Male", "A101", 120_000);
 
         System.out.println(employee.toString());
 
@@ -29,7 +27,7 @@ public class Test {
 
         System.out.println("--------------------------------------------");
 
-        Developer developer = new Developer("Dauren", 35, 'M', 102, 130000 , "Python");
+        Developer developer = new Developer("Dauren", 35, "Male", "A102", 130000 , "Python");
 
         System.out.println(developer);
 
@@ -43,7 +41,7 @@ public class Test {
 
         System.out.println("--------------------------------------------");
 
-        Manager manager = new Manager("Mariya", 30, 'F', 103, 130_000, "IT Department");
+        Manager manager = new Manager("Mariia", 30, "Female", "A03", 130_000, "IT Department");
 
         System.out.println(manager);
 
@@ -59,15 +57,29 @@ public class Test {
         // company.hireEmployee(null);
         company.hireEmployee(developer);
         company.hireEmployee(manager);
-        company.hireEmployee( new Developer("Feyyaz", 36, 'M', 105, 115_000));
-        company.hireEmployee(new Manager("Erfan", 42, 'M', 107, 150_000, "HR Department"));
+        company.hireEmployee( new Developer("Feyyaz", 36, "Male", "A05", 115_000));
+        company.hireEmployee(new Manager("Erfan", 42, "Male", "A07", 150_000, "HR Department"));
+
+        Employee[] employees = {developer, manager};
+
+        company.hireEmployee(employees);
 
         System.out.println(company);
 
-        company.fireEmployee(102);
+        company.fireEmployee("A102");
 
         System.out.println(company);
 
+        company.displayEmployeesInfo();
+
+
+        System.out.println("-----------------------------------------------");
+
+        String[] employeeIds = {"A02", "A07"};
+
+        company.fireEmployee(employeeIds);
+
+        System.out.println(company);
         company.displayEmployeesInfo();
     }
 }

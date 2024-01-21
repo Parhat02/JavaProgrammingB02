@@ -1,6 +1,5 @@
 package week10.week10_review;
 
-import week10.day31_inheritance.day31Tasks.employeeTask.Employee;
 
 import java.util.ArrayList;
 
@@ -55,11 +54,28 @@ public class Company {
         employees.add(employee);
     }
 
-    public void fireEmployee(int id){
-        if (id == 0){
+    public void hireEmployee(Employee[] employees){
+
+        // this.employees.addAll(Arrays.asList(employees));
+        for (Employee employee : employees) {
+            hireEmployee(employee);
+        }
+
+    }
+
+    public void fireEmployee(String employeeId){
+        if (employeeId == null){
             throw new RuntimeException("The id can not be 0");
         }
-        employees.removeIf(p-> p.getId() == id);
+        employees.removeIf( p -> p.getEmployeeId().equalsIgnoreCase(employeeId));
+    }
+
+    public void fireEmployee(String[] employeeIds){
+
+        for (String employeeId : employeeIds) {
+            fireEmployee(employeeId);
+        }
+
     }
 
     @Override
