@@ -1,6 +1,6 @@
 package week13.day39_collections;
 
-public class ThreadHelloWorld extends Thread{
+public class ThreadHelloWorld extends Thread{  // we can extend Thread class, or we can implement Runnable interface
 
     int threadNumber;
 
