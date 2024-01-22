@@ -38,6 +38,15 @@ public class Test {
             throw new InvalidProductPriceException("The maximum price of TV is 5000, but given" + product1.getPrice());
         }
 */
+        try{
+            product1 = new Product(null, 2000);
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+
+        System.out.println("=====================");
+
         System.out.println(product1);
 
 
@@ -67,6 +76,15 @@ public class Test {
         cart.displayCart();
 
         cart.remove("TV");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        System.out.println("+++++++++++");
 
     }
 }
