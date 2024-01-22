@@ -1,6 +1,6 @@
 package week13.day39_collections;
 
-public class TheMultiThreading {
+public class TestMultiThreading {
 
     public static void main(String[] args) {
 
