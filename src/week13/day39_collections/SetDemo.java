@@ -90,6 +90,8 @@ public class SetDemo {
         System.out.println(n);
 
 
-        // numbers = new ArrayList<>(n);
+        numbers = new ArrayList<>(n);
+
+        System.out.println(numbers);
     }
 }
