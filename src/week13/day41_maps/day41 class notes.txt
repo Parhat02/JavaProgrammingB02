@@ -1,0 +1,58 @@
+Topics: Maps
+
+Package name: day41_maps
+
+
+Array vs Collection: both supports non primitives
+
+		Array: Size is fixed
+			   Supports both primitives & non-primitives
+			   Can be mult-dimensional
+
+			   Faster than Collection
+
+
+		Collection: Size is dynamic
+					Supports non-primitives ONLY
+					Can not be multidimensional
+
+					Ready methods
+
+
+Map (I): Collection of Pairs (key & value)
+		 Supports non-primitives ONLY
+		 Size is dynamic
+		 Key MUST be unique, value can be duplicated
+
+
+		1. HashMap (C): Random order
+						Both key and value can be null
+
+
+		2. LinkedHashMap (C): Insertion order
+							  Both key and value can be null
+
+
+		3. TreeMap (C): Sorted order
+						Key can not be null, values can be null
+
+
+		4. HashTable (C): Random order
+						  Both key and value can NOT be null
+						  Synchronized
+
+Methods of Map:
+		put(key, value): inserts the given key and value to the Map as a pair (entry)
+							can also be used for updating the values of exsiting keys
+
+		size(): returns the total number of pairs
+
+		get(key): returns the value of the specified key
+
+		replace(key, newValue): replaces the value of the specified key with the new value
+
+		remove(key): removes the pair with the matching key from the map
+
+		containsKey(key): returns true if the specified key is included in the map, otherwise returns false
+
+		containsValue(Value): returns true if the specified Value is included in the map, otherwise returns false
