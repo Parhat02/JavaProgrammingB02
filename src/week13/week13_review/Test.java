@@ -26,6 +26,8 @@ public class Test {
 
         System.out.println(playlist1);
 
+        System.out.println(playlist1.getSongs().get("Shape of You".toLowerCase()));
+
         playlist1.removeSong("Shape of You");
 
         playlist1.displayPlayList();
