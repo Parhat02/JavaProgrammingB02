@@ -22,7 +22,7 @@ public class MapPractice {
         properties.load(file);
 
         // System.out.println( properties.getProperty("browser") );
-        //   System.out.println(properties.stringPropertyNames());
+        // System.out.println(properties.stringPropertyNames());
 
         Map<String, String> map = new HashMap<>();
 
