@@ -1,0 +1,104 @@
+01/14/2024
+
+Week11 Review:
+	Final Keyword
+	Abstraction
+	Polymorphism
+
+
+final keyword: unchangeable
+
+		variable: can not be reassigned
+
+		methods: can not be overriden
+
+		class: can not be inherited
+
+
+
+4 OOP Principles:
+	1. Encapsulation: Hiding Data
+
+	2. Inheritance: Is A Relation ship
+
+	3. Abstraction: hiding implementation details
+
+				Focus on essentials and ignore the details
+
+			Abstract method: method without the body/implemntation
+							 MUST be overriden
+
+			Abstract class: meant to be parent
+				 To provide the common features to ALL THE SUBCLASSES
+
+				 Can have any methods & variables PLUS the abstract methods
+
+
+			Interface: meant to be parent
+				To provide additional features to any class that needs it
+
+				Can only have static methods, abstract methods, default methods.
+				Can only static final variables
+
+
+	4. Polymorphism: Ability of the objects to take on Many forms
+
+				Reference type is the paraent and the object type is the child
+
+
+
+Practice Tasks:
+1. Create a class named Shape:
+    Variables:
+        name (final)
+
+    Encapsulate all the fields
+
+    Methods:
+        calcArea();
+        calcPerimeter()
+        toString(): includes the area & perimeter of the shape
+
+
+2. Create the following sub-classes of Shape and add any additional variables/methods that are needed:
+
+   		2.1 Rectangle:
+   				Attributes:
+   					width, length
+
+				Actions:
+					calcArea() -> width * length
+					calcPerimeter() -> 2 * (length + width)
+
+		2.2 Circle:
+				Attributes:
+					radius
+
+				Actions:
+					calcArea() -> (radius * radius) * PI
+					calcPerimeter() -> 2 * radius * PI
+
+		2.3 Cube:
+   				Attributes:
+   					side
+
+				Actions:
+					calcArea() -> 6 * (side * side)
+					calcPerimeter() -> 12 * side
+					calcVolume() -> side * side * side
+
+		2.4 Cylinder:
+				Attributes:
+					height, radius
+
+				Actions:
+					calcArea() -> 2 * PI * radius * height + (2 * PI * pow(radius, 2))
+					calcPerimeter() -> (2 * radius) + (2 * height)
+					calcVolume() -> PI * radius * radius * height
+
+
+		2.5 Cone:
+				calcVolume()
+
+		2.6 Pyramid
+				calcVolume()
