@@ -1,0 +1,81 @@
+01/21/2024
+
+Week12 Review
+	Reference Type Castings
+	Exceptions: Checked & Unchecked
+	Exception handlings: Try & catch , Throws
+	Throw
+
+
+Reference Type Castings: IS A relation
+
+		upcasting: casting smaller type to larger type
+
+		downcasting: casting larger type to smaller type. casting operator is a must to give
+
+
+
+Exceptions: checked or unchecked
+
+	throw
+
+
+Array: Size is fixed
+	Can be multi-dimensional
+
+	If we know how many elements we need to store AND we do not need add or remove elements
+
+
+Collection: size is dynamic, Supports non-primitives
+	remove()
+	removeAll()
+	retainAll()
+	removeIf()
+
+
+
+Practice Task:
+1. Create a custom unchecked exception class named ProductNotFoundException
+
+2. Create a custom unchecked exception class named InvalidProductNameException
+
+3. Create a custom unchecked exception class named InvalidProductPriceException
+
+4. Create a class named Product with the following specifications:
+
+	Attributes:
+		name
+		price
+
+	Encapsulate all the fields:
+		Throw InvalidItemNameException in the setter of name when a null key or empty string is given to the product name
+
+		Throw InvalidItemNameException in the setter of price when 0 or negative number is given to the product price
+
+	Add a constructor that can set name and price
+
+	Add toString() method
+
+
+5. Create a ShoppingCart class to represent the user's shopping cart
+
+	Include a list to store products in the cart.
+
+	Implement methods to add a product to the cart, display the cart contents, and remove a product from the cart.
+
+	Throw ProductNotFoundException in the removeItem method when attempting to remove a product that is not in the cart.
+
+
+
+Next Week:
+	Collections & Map
+
+1 Week Off
+
+1 Week Soft SKill
+
+1 Week Git & GitHub
+
+3 Weeks of Java (Stream API, Lambda, Generics etc)
+
+...

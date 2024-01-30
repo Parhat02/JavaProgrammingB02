@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ShoppingCart {
 
-    private List<Product> products;
+    final private List<Product> products;
 
     public ShoppingCart() {
         products = new LinkedList<>(); // doubly linked list : Insertion and deletion of elements are faster
