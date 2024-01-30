@@ -75,7 +75,7 @@ public class Test {
 
         cart.displayCart();
 
-        cart.remove("TV");
+        //cart.remove("TV");
 
         try {
             Thread.sleep(2000);

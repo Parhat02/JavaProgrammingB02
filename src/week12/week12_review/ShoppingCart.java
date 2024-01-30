@@ -32,6 +32,7 @@ public class ShoppingCart {
 //            if (product == null){
 //                continue;
 //            }
+//            this.products.add(product);
             addToCart(product);  // throws exception if any element in the given array of products is null
         }
     }
@@ -52,7 +53,7 @@ public class ShoppingCart {
                 System.out.println("The product " + name + " has been removed from the cart successfully");
             }
 
-
+            // Smart move:
 //        if(products.removeIf(p -> p.getName().equalsIgnoreCase(name))){ // to make sure that the product is in the shopping cart
 //            System.out.println("The product " + name + " has been removed from the cart successfully");
 //        }else{ // otherwise
