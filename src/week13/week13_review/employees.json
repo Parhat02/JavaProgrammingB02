@@ -1,0 +1,14 @@
+{
+  "A01": {
+    "name": "James",
+    "age": 35,
+    "salary": 900000
+  },
+
+  "A02": {
+    "name": "Yulia",
+    "age": 30,
+    "salary": 120000,
+    "full_time": false
+  }
+}

@@ -1,0 +1,76 @@
+01/28/2024
+
+Week13 Review:
+	Collection
+	Maps
+
+	Properties
+
+
+Array vs Collection vs Map:
+
+	Array: Individual elements
+
+	Collection: Individual elements
+
+	Map: Pair of elements
+
+
+
+
+Practice Task:
+1. Create a custom class named Song with the following specifications:
+
+    Attributes:
+        title (String): Represents the title of the song.
+        artist (String): Represents the artist of the song.
+        genre (String): Represents the genre of the song.
+        releaseYear (int): Represents the release year of the song.
+        duration (localTime)
+
+    Encapsulate all the fields.
+
+    Add a constructor that can set all the fields.
+
+    Add a toString() method.
+
+
+2. Create a custom class named PlayList with the following specifications:
+
+    Attributes:
+        name (String): Used for storing the name of the playlist.
+        songs (Map<String, Song>): Used for storing the title of the song as the key and the corresponding Song object as the value.
+
+    Encapsulate the fields, but only generate a getter for the variable `songs`.
+
+    Add a constructor that can set the name of the playlist.
+
+    Actions:
+        addSong(Song): Takes a Song object and adds it to the map of songs.
+        removeSong(title): Takes a string argument and removes the song with the matching title from the map.
+        displayPlayList(): Displays each Song object in the playlist.
+
+
+3. Create a custom class named MusicLibrary with the following specifications:
+
+    Attributes:
+        playlists (List<PlayList>): Used for storing PlayList objects.
+
+    Actions:
+        addPlaylist(playList): Adds the given PlayList object to the MusicLibrary.
+        removePlayList(name): Removes the playlist with the specified name from the MusicLibrary.
+        getPlaylist(name): Returns the PlayList object with the given name from the list.
+        displayMusicLibrary(): Displays playlists and songs of each playlist in the MusicLibrary object.
+
+
+
+
+
+Remaining Java Topics:
+	Genrics
+	Enums
+	Functional Interfaces
+	Lambda
+	Stream API
+	Optional class
+	...
