@@ -74,6 +74,8 @@ public class EmailValidator {
 
         System.out.println("You entered a valid email address : " + email);
 
+        input.close();
+
 //        Scanner input = new Scanner(System.in);
 //        System.out.println("Enter you email address: ");
 //        String email = input.nextLine();
