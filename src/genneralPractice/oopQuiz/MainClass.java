@@ -9,6 +9,7 @@ public class MainClass {
 }
 
 class X{
+    int a;
     public X(int age) {
         System.out.println("xxxxx");
     }
@@ -19,6 +20,7 @@ class X{
 }
 
 class Y extends X{
+
     public Y(int age) {
         super(age);
     }
