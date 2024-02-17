@@ -76,6 +76,8 @@ public class EmailValidator {
 
         input.close();
 
+        System.out.println("-----------------------------------------------------------");
+
 //        Scanner input = new Scanner(System.in);
 //        System.out.println("Enter you email address: ");
 //        String email = input.nextLine();
@@ -119,5 +121,55 @@ public class EmailValidator {
 //        }
 //
 //        System.out.println("You entered a valid email address : " + email);
+        System.out.println(validEmail("test@cydeo.com"));
+        System.out.println(validEmail("test@cydeo.co.uk"));
+        System.out.println(validEmail("mike.smith@cydeo.com"));
+        System.out.println(validEmail("mike.smith@com"));
+        System.out.println(validEmail("@cydeo.com"));
+        System.out.println(validEmail("test@.com"));
+        System.out.println(validEmail("test@cydeo."));
+        System.out.println(validEmail("test@@cydeo.com"));
+    }
+
+    public static boolean validEmail(String email) {
+        boolean correctEmail = false;
+
+        char[] arr = email.toCharArray();
+
+        int count = 0;
+        for (char c : arr) {
+            if (c == '@') {
+                count++;
+            }
+        }
+        if (count != 1) {
+            return correctEmail;
+        }
+
+        int indexOfAt = email.indexOf("@");
+        String emailName = email.substring(0, indexOfAt);
+        if (emailName.isEmpty() || emailName.isBlank()) {
+            return correctEmail;
+        }
+
+        String domain = email.substring(indexOfAt + 1);
+        if (!domain.contains(".")) {
+            return correctEmail;
+        }
+
+        int indexOfDot = domain.indexOf(".");
+        String domainName = domain.substring(0, indexOfDot);
+        if (domainName.isBlank() || domainName.isEmpty()) {
+            return correctEmail;
+        }
+
+        String topLevelDomain = domain.substring(indexOfDot + 1);
+        if (topLevelDomain.isEmpty() || topLevelDomain.isBlank()) {
+            return correctEmail;
+        }
+
+        correctEmail=true;
+
+        return correctEmail;
     }
 }
