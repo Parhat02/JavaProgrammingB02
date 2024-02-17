@@ -1,5 +1,7 @@
 package genneralPractice;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EmailValidator {
@@ -157,6 +159,10 @@ public class EmailValidator {
             return correctEmail;
         }
 
+//        if (domain.indexOf(".")!=domain.lastIndexOf(".")){
+//            return correctEmail;
+//        }
+
         int indexOfDot = domain.indexOf(".");
         String domainName = domain.substring(0, indexOfDot);
         if (domainName.isBlank() || domainName.isEmpty()) {
@@ -167,6 +173,10 @@ public class EmailValidator {
         if (topLevelDomain.isEmpty() || topLevelDomain.isBlank()) {
             return correctEmail;
         }
+//        ArrayList<String> topLevelDomains =new ArrayList<>(Arrays.asList("com", "cn", "org", "net", "edu"));
+//        if (!topLevelDomains.contains(topLevelDomain)) {
+//            return correctEmail;
+//        }
 
         correctEmail=true;
 
