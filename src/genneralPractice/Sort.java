@@ -9,7 +9,7 @@ public class Sort {
 
         System.out.println(Arrays.toString(sorting(nums)));
 
-        int[] numbers= {7,2,4,6,4,1,9,-1};
+        int[] numbers= {7,2,4,6,4,1,9,-1,5};
 
         System.out.println(Arrays.toString(selectionSort(numbers)));
         System.out.println(Arrays.toString(bubbleSort(numbers)));
@@ -37,7 +37,7 @@ public class Sort {
         for (int i = 0; i < nums.length; i++) {
             int minIndex = i;
             for (int j = i+1; j < nums.length; j++) {
-                if (nums[i] > nums[j]){
+                if (nums[minIndex] > nums[j]){
                     minIndex = j;
                 }
             }
