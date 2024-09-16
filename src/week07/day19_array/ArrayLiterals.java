@@ -40,5 +40,13 @@ public class ArrayLiterals {
 //        System.out.println(x);
 //        System.out.println(y);
 //        System.out.println(z);
+
+
+        int[] arr = new int[5];
+        Arrays.fill(arr, 100);
+        System.out.println(Arrays.toString(arr));
+        Arrays.fill(arr, 0, 3, 99);
+        System.out.println(Arrays.toString(arr));
+
     }
 }
