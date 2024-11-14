@@ -49,7 +49,7 @@ multiples of 10. Otherwise, the below message will be displayed on the screen.
         int loyalty = input.nextInt();
         String result ;
 
-        if (loyalty >= 0 && loyalty %10 == 0){
+        if (loyalty >= 0){
             if (loyalty >= 100){
                 result = "Congratulations! You are a Gold Member. Enjoy a 10% discount!";
             } else if (loyalty >= 50) {

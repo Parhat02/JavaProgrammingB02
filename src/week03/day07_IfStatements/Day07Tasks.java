@@ -92,7 +92,7 @@ program that can print the grade of the student
         3. if the browser name does not match with the valid browser names, output should be: Invalid Browser Name
          */
         String browserName = "chrome, firefox, opera, safari, edge";
-        String selectedBrowser = "Chrome";
+        String selectedBrowser = "firefox";
         selectedBrowser = selectedBrowser.toLowerCase();
         String result1 = "";
         if (browserName.contains(selectedBrowser)) {
@@ -104,8 +104,10 @@ program that can print the grade of the student
                 result1 = "opera";
             } else if (selectedBrowser.equals("safari")) {
                 result1 = "safari";
-            } else {
-                result1 = "edge";
+            } else if (selectedBrowser.equals("edge")) {
+                result1 = "edge";}
+            else {
+                System.out.println("Invalid selection");
             }
             System.out.println(result1 + " Browser is selected");
 
