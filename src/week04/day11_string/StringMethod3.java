@@ -28,7 +28,7 @@ public class StringMethod3 {
 
         System.out.println( str1.equals(str2) );
 
-        String str3 = new String("cydeo");
+        String str3 = new String("Cydeo");
 
         System.out.println( str2.equals(str3));
 

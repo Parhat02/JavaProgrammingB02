@@ -15,7 +15,7 @@ public class StringMethod1 {
 
         String str3 = str2.toUpperCase(); //"JAVA PROGRAMMING"
 
-        System.out.println(str2);
+        System.out.println(str3);
 
         //---------------------------------------------
 
