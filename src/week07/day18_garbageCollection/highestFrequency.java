@@ -1,5 +1,8 @@
 package week07.day18_garbageCollection;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class highestFrequency {
 
     /*
@@ -12,7 +15,7 @@ Ex:
         e
  */
     public static void main(String[] args) {
-        highestFrequencyCh("aaabbccccddeeee");
+        highestFrequencyCh("aaabbccccddeeeeaae");
     }
 
 
@@ -20,8 +23,10 @@ Ex:
 
         String frequency = "";
         int max = 0;
-
         String result = "";
+
+        Map<Character, Integer> map = new HashMap<>();
+
         for (int i = 0; i < str.length(); i++) {
 
             int count = 0;
@@ -37,15 +42,26 @@ Ex:
                 }
 
             }
+
+            map.put(str.charAt(i), count);
+
             if (count > max){
                 max = count;
             }
 
-            result = str.charAt(i)+"";
+            result += str.charAt(i)+"";
+        }
+
+        System.out.println(result+" 1111111111111");
+        for (int i = 0; i < result.length(); i++) {
+            if (map.get(result.charAt(i)) == max){
+                frequency= frequency + result.charAt(i);
+            }
         }
 
         result = "";
         System.out.println("Max frequency is: "+max);
+        System.out.println("The characters which has the highest frequency: \n"+frequency);
         for (int i = 0; i < str.length(); i++) {
 
             int count = 0;
@@ -59,7 +75,7 @@ Ex:
                     count += 1;
                 }
             }
-            result = str.charAt(i)+"";
+            result += str.charAt(i)+"";
             System.out.println(str);
             System.out.println(str.charAt(i)+"");
             System.out.println(count);
